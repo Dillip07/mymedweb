@@ -26,8 +26,14 @@ export default function HomePage() {
       <header className="border-b bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
-              <Stethoscope className="w-7 h-7 text-white" />
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Image
+                src="/logo-transparent.png"
+                alt="MyMedCare Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -586,8 +592,14 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
-                  <Stethoscope className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <Image
+                    src="/logo-white.png"
+                    alt="MyMedCare Logo"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <span className="text-2xl font-bold">MyMedCare</span>
               </div>
