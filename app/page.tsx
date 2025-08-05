@@ -18,13 +18,14 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import MobileNav from "@/components/MobileNav";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Header */}
       <header className="border-b bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between relative">
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 flex items-center justify-center">
               <Image
@@ -44,6 +45,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="#features"
@@ -67,6 +70,8 @@ export default function HomePage() {
               Get Started
             </Button>
           </nav>
+
+          <MobileNav />
         </div>
       </header>
 
